@@ -1,0 +1,127 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "layout": {
+      "contentSize": "960px"
+    },
+    "appearanceTools": true,
+    "typography": {
+      "fluid": {
+        "minViewportWidth": "375px",
+        "maxViewportWidth": "960px"
+      },
+      "defaultFontSizes": false,
+      "fontSizes": [
+        {
+          "fluid": false,
+          "name": "Small",
+          "size": "14px",
+          "slug": "small"
+        },
+        {
+          "fluid": {
+            "max": "18px",
+            "min": "16px"
+          },
+          "name": "Medium",
+          "size": "18px",
+          "slug": "medium"
+        },
+        {
+          "fluid": {
+            "max": "20px",
+            "min": "16px"
+          },
+          "name": "Large",
+          "size": "20px",
+          "slug": "large"
+        },
+        {
+          "fluid": {
+            "max": "22px",
+            "min": "16px"
+          },
+          "name": "X Large",
+          "size": "22px",
+          "slug": "x-large"
+        },
+        {
+          "fluid": {
+            "max": "24px",
+            "min": "20px"
+          },
+          "name": "XX Large",
+          "size": "24px",
+          "slug": "xx-large"
+        },
+        {
+          "fluid": {
+            "max": "28px",
+            "min": "22px"
+          },
+          "name": "Huge",
+          "size": "28px",
+          "slug": "huge"
+        }
+      ]
+    },
+    "spacing": {
+      "defaultSpacingSizes": false,
+      "blockGap": true,
+      "spacingSizes": [
+        {
+          "name": "Tiny",
+          "size": "0.5rem",
+          "slug": "8"
+        },
+        {
+          "name": "X-Small",
+          "size": "1rem",
+          "slug": "16"
+        },
+        {
+          "name": "Small",
+          "size": "1.75rem",
+          "slug": "28"
+        },
+        {
+          "name": "Regular",
+          "size": "clamp(2rem, 1.679rem + 1.37vw, 2.5rem)",
+          "slug": "40"
+        },
+        {
+          "name": "Large",
+          "size": "clamp(3rem, 2.359rem + 2.74vw, 4rem)",
+          "slug": "64"
+        },
+        {
+          "name": "X-Large",
+          "size": "clamp(4rem, 3.359rem + 2.74vw, 5rem)",
+          "slug": "80"
+        },
+        {
+          "name": "XX-Large",
+          "size": "clamp(4rem, 1.436rem + 10.94vw, 8rem)",
+          "slug": "128"
+        }
+      ]
+    }
+  },
+
+  "styles": {
+    "spacing": {
+      "blockGap": "var(--wp--preset--spacing--28)",
+      "padding": {
+        "top": ""
+      }
+    },
+    "elements": {
+      "link": {
+        "typography": {
+          "textDecoration": ""
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+@use "../global/scss-variables" as global;
+
+
+
+.page-banner {
+    &__inner {
+        height: 540px;
+
+        @media #{global.$max-md} {
+            height: 211px;
+        }
+    }
+}
+
+.page-banner-main {
+    width: 100%;
+    height: 100%;
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+}

@@ -1,0 +1,89 @@
+@use "../global/scss-variables" as global;
+
+.sec-spacing {
+    padding-block: 6.5rem;
+
+    @media #{global.$max-md} {
+        padding-block: 3.5rem;
+    }
+
+    &_small {
+        padding-block: 2.5rem;
+
+        @media #{global.$max-md} {
+            padding-block: 1.5rem;
+        }
+    }
+
+    &_medium {
+        padding-block: 3.5rem;
+    }
+
+    &_large {
+        padding-block: 6rem;
+
+        @media #{global.$max-md} {
+            padding-block: 3rem;
+        }
+    }
+}
+
+.sec-tit-box {
+    margin-bottom: 3.5rem;
+    text-align: center;
+
+    @media #{global.$max-md} {
+        margin-bottom: 1.5rem;
+    }
+
+    &_large {
+        @media #{global.$max-md} {
+            margin-bottom: 2.25rem;
+        }
+    }
+
+    &_contrast {
+        color: var(--primary-contrast-color);
+    }
+
+    &__en-tit {
+        line-height: 1;
+        font-weight: 900;
+        font-size: 48px;
+        letter-spacing: .1em;
+        font-family: var(--en-font-family);
+        margin-bottom: 0.75rem;
+
+        @media #{global.$max-md} {
+            font-size: 28px;
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    &__jp-tit {
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: var(--base-letter-spacing);
+
+        @media #{global.$max-md} {
+            font-size: 12px;
+        }
+    }
+}
+
+.sec-bg {
+    &_primary {
+        background: var(--primary-color);
+        color: var(--primary-contrast-color-color);
+    }
+
+    &_secondary {
+        background: var(--secondary-color);
+        color: var(--secondary-contrast-color);
+    }
+
+    &_tertiary {
+        background: var(--tertiary-color);
+        color: var(--tertiary-contrast-color);
+    }
+}

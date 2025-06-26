@@ -1,0 +1,19 @@
+.sidebar {}
+
+.sidebar-meeting {
+    &__inner {
+        padding: 5.5rem 1rem;
+    }
+}
+
+.sidebar-meeting-tit-box {
+    margin-bottom: 3.125rem;
+
+    &__tit {
+        text-align: center;
+        font-weight: bold;
+        font-size: clamp(1rem, -0.004rem + 1.25vw, 1.25rem);
+        color: var(--primary-color);
+        letter-spacing: 0;
+    }
+}

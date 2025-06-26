@@ -1,0 +1,27 @@
+@use "../../global/scss-variables" as global;
+
+.dropdown-header {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown-arrow {
+    position: absolute;
+    right: 1.25rem;
+    transition: .3s;
+}
+
+.dropdown-content {
+    transition-property: grid-template-rows;
+    transition-duration: 500ms;
+    display: grid;
+    grid-template-rows: 0fr;
+
+    &_open {
+        grid-template-rows: 1fr;
+    }
+
+    &__inner {
+        overflow: hidden;
+    }
+}

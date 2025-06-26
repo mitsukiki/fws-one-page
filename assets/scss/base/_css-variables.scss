@@ -1,0 +1,56 @@
+// CSS変数定義 - Tailwind CSSと連携
+// tailwind.config.jsの変数と連携して使用
+@use "../global/scss-variables" as global;
+
+:root {
+    --black-color: #000;
+    --white-color: #fff;
+
+
+    //プラグインで設定した場合、上書きされる
+    --primary-color: #333;
+    --primary-contrast-color: #fff;
+
+    --base-color: #fff;
+    --contrast-color: #333;
+
+    --secondary-color: #fff;
+    --secondary-contrast-color: #fff;
+
+    --tertiary-color: #3F3F3F;
+    --tertiary-contrast-color:  #fff;
+
+    --accent-color: #eeee22; 
+
+    --base-border-color: #DFDFDF;
+
+    --base-font-family: "Noto Sans JP";
+    --en-font-family: "Source Sans 3", "Zen Kaku Gothic New", "Noto Sans JP";
+    // --accent-font-family: "Zen Kaku Gothic New", "Noto Sans JP";
+    --num-font-family: "din-2014", "Zen Kaku Gothic New", "Noto Sans JP";
+
+    --poppins-font-family: "Poppins";
+
+    --base-letter-spacing: 0.05em;
+    --base-weight: 400;
+    --base-line-height: 1.5;
+    --base-p-line-height: 2;
+    --base-font-size: 15px;
+    --base-font-size-sp: 15px;
+
+    --comment-bg-color: #CEEEFF;
+
+    --link-font-color: var(--primary-color);
+
+    --form-input-fucused-border-color: #16AFDF;
+    --form-input-fucused-shadow-color-rgb: 70, 207, 250;
+
+    --form-error-bg-color: #FFF0F0;
+    --error-color: #FF2E2E;
+
+    --front-company-table-border-color: #F5F5F5;
+
+
+    @media #{global.$max-md} {
+    }
+}

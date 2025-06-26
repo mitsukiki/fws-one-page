@@ -1,0 +1,49 @@
+@use "../global/scss-variables" as global;
+
+:root :where(.is-layout-constrained)> :first-child {
+    margin-top: 0;
+}
+
+h2.wp-block-heading,
+h3.wp-block-heading,
+h4.wp-block-heading {
+    margin-top: 4rem;
+
+    @media #{global.$max-md} {
+        margin-top: 2rem;
+    }
+}
+
+h2.wp-block-heading {
+    font-size: var(--wp--preset--font-size--xx-large);
+    font-weight: 500;
+    letter-spacing: var(--base-letter-spacing);
+
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--main-color);
+}
+
+h3.wp-block-heading {
+    font-size: var(--wp--preset--font-size--x-large);
+    font-weight: 500;
+    letter-spacing: .03em;
+}
+
+h4.wp-block-heading {
+    font-size: var(--wp--preset--font-size--large);
+    font-weight: 500;
+    letter-spacing: .03em;
+}
+
+h4.wp-block-heading {
+    font-size: var(--wp--preset--font-size--large);
+    font-weight: 500;
+    letter-spacing: .03em;
+}
+
+ol.wp-block-list,
+ul.wp-block-list,
+menu.wp-block-list {
+    list-style: revert;
+    padding-left: 1.25rem;
+}

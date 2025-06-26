@@ -1,0 +1,13 @@
+@use "../global/scss-variables" as global;
+
+.header {}
+
+.content-wrapper {
+    display: flex;
+}
+
+.main-content {
+    width: 100%;
+}
+
+.footer {}

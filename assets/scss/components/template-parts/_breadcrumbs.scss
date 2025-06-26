@@ -1,0 +1,27 @@
+@use "../../global/scss-variables" as global;
+
+.breadcrumbs {
+    &__inner {
+        padding-block: 0.5rem;
+    }
+}
+
+.breadcrumbs-main {
+    &__nav {}
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.25rem;
+    }
+
+    &__item {
+        color: #666;
+        font-size: 12px;
+        font-weight: 400;
+        font-family: var(--poppins-font-family);
+        letter-spacing: var(--base-letter-spacing);
+    }
+
+    &__link {}
+}

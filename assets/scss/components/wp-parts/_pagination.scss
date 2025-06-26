@@ -1,0 +1,48 @@
+.navigation.pagination {
+    margin-top: 2rem;
+
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .page-numbers {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 900;
+            letter-spacing: var(--base-letter-spacing);
+
+            background: var(--secondary-color);
+            color: var(--secondary-constrast-color);
+
+            transition: .3s;
+
+            &.current {
+                background: var(--primary-color);
+                color: var(--primary-contrast-color);
+            }
+
+            &.dots {
+                &:hover {
+                    background: var(--secondary-color);
+                    color: var(--secondary-constrast-color);
+                }
+            }
+
+            &.prev,
+            &.next {
+                color: var(--secondary-constrast-color);
+            }
+
+            &:hover {
+                background: var(--primary-color);
+                color: var(--primary-contrast-color);
+            }
+        }
+    }
+}
