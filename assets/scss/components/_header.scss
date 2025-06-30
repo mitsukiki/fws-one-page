@@ -14,7 +14,7 @@
     z-index: 400;
     width: 100%;
 
-    &_sticky{
+    &_sticky {
         background: var(--base-color);
     }
 
@@ -313,5 +313,11 @@
 
             position: relative;
         }
+    }
+}
+
+.body {
+    &_menu-open {
+        overflow: hidden;
     }
 }
