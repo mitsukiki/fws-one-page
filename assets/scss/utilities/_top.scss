@@ -313,6 +313,8 @@
 .front-company {
     @media #{global.$max-md} {
         background: var(--secondary-color);
+        position: relative;
+        z-index: 1;
     }
 
     &__inner {}
