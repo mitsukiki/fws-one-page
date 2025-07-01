@@ -60,7 +60,6 @@
     }
 
     &__jp-tit {
-        font-family: var(--poppins-font-family);
         font-weight: 800;
         font-size: 16px;
         line-height: 1;
@@ -338,7 +337,7 @@
     padding: 2.5rem;
 
     position: relative;
-    margin-top: -9.75rem;
+    margin-top: -3.75rem;
 
     @media #{global.$max-md} {
         margin-top: 0;
